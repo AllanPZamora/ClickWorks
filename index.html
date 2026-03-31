@@ -1,11 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClickWorks - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClickWorks - Home</title>
+  <link rel="stylesheet" href="src/style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
 </head>
 <body>
-    
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Click<span>Works</span></a>
+  <ul class="nav-links">
+    <li><a href="#keyboards">Keyboards</a></li>
+    <li><a href="#switches">Switches</a></li>
+    <li><a href="#keycaps">Keycaps</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Handpicked · Handcrafted · Made for you</p>
+    <h1 class="hero-title">Your first <em>great</em> keyboard.</h1>
+    <p class="hero-sub">No jargon, no overwhelm. Just keyboards that feel as good as they look chosen with beginners in mind.</p>
+      <div class="hero-actions">
+        <a href="#keyboards" class="btn-primary-custom">Shop Now</a>
+        <a href="#about" class="btn-ghost">Our Story</a>
+      </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Keyboards</div>
+      </div>
+      <div>
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Switch Types</div>
+      </div>
+      <div>
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Keycap Sets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="cat-banner">
+  <div class="cat-ticker">
+    <span class="highlight">Keyboards</span><span>·</span>
+    <span>Tactile Switches</span><span>·</span>
+    <span class="highlight">Keycaps</span><span>·</span>
+    <span>Linear Switches</span><span>·</span>
+    <span class="highlight">Beginner Friendly</span><span>·</span>
+    <span>Clicky Switches</span><span>·</span>
+    <span class="highlight">Keyboards</span><span>·</span>
+    <span>Tactile Switches</span><span>·</span>
+    <span class="highlight">Keycaps</span><span>·</span>
+    <span>Linear Switches</span><span>·</span>
+    <span class="highlight">Beginner Friendly</span><span>·</span>
+    <span>Clicky Switches</span><span>·</span>
+  </div>
+</div>
+
+<!-- FEATURED CATEGORIES -->
+<section style="background: var(--paper); padding: 5rem 0;">
+  <div class="container">
+    <p class="section-label">Browse by Category</p>
+    <h2 class="section-title">Find what<br/>you're looking for</h2>
+    <div class="divider"></div>
+    <div class="row g-3 mt-2">
+      <div class="col-md-6">
+        <a href="#keyboards" class="cat-block d-block" style="min-height: 420px;">
+          <div class="cat-block-num">01</div>
+          <div class="cat-block-label">Category</div>
+          <div class="cat-block-title">Keyboards</div>
+          <div class="cat-block-sub">Full boards, tenkeyless, compact all curated for feel-first beginners.</div>
+          <div class="cat-block-arrow">Browse Keyboards →</div>
+        </a>
+      </div>
+      <div class="col-md-6 d-flex flex-column gap-3">
+        <a href="#switches" class="cat-block light d-block" style="min-height: 196px;">
+          <div class="cat-block-num">02</div>
+          <div class="cat-block-label">Category</div>
+          <div class="cat-block-title">Switches</div>
+          <div class="cat-block-sub">Clicky, tactile, or silent we help you pick the right feel.</div>
+          <div class="cat-block-arrow" style="color: var(--accent);">Browse Switches →</div>
+        </a>
+        <a href="#keycaps" class="cat-block d-block" style="min-height: 196px; background: #242420;">
+          <div class="cat-block-num">03</div>
+          <div class="cat-block-label">Category</div>
+          <div class="cat-block-title">Keycaps</div>
+          <div class="cat-block-sub">Dress your board. Dozens of sets to match your style.</div>
+          <div class="cat-block-arrow">Browse Keycaps →</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEYBOARDS -->
+<section id="keyboards" style="background: var(--warm);">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-5">
+      <div>
+        <p class="section-label">Category 01</p>
+        <h2 class="section-title">Keyboards</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Every board here has been selected for comfort, build quality, and ease of use. No experience needed.</p>
+      </div>
+      <a href="#" class="btn-card d-none d-md-inline-block" style="white-space:nowrap;">View All →</a>
+    </div>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">Best Seller</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">Full-size · Wired</div>
+            <div class="card-name">The Everyday Board</div>
+            <div class="card-desc">A reliable full-size for home and office. Smooth, sturdy, and satisfying to type on.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱2,499<small>Free shipping</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"></div>
+          <div class="card-body-custom">
+            <div class="card-cat">Tenkeyless · Wireless</div>
+            <div class="card-name">The Clean TKL</div>
+            <div class="card-desc">No numpad, more desk space. Wireless and compact perfect for a tidy setup.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱3,799<small>Free shipping</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">New</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">65% · Wired</div>
+            <div class="card-name">The Starter 65</div>
+            <div class="card-desc">Our most recommended first board. Compact, affordable, and great to type on out of the box.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱1,899<small>Free shipping</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SWITCHES -->
+<section id="switches" style="background: var(--paper);">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-5">
+      <div>
+        <p class="section-label">Category 02</p>
+        <h2 class="section-title">Switches</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Not sure what switches mean? Think of them as the feel of each keypress. We keep it simple.</p>
+      </div>
+      <a href="#" class="btn-card d-none d-md-inline-block" style="white-space:nowrap;">View All →</a>
+    </div>
+    <!-- Guide strip -->
+    <div class="row g-0 mb-5" style="border: 1px solid var(--border);">
+      <div class="col-md-4" style="padding: 1.5rem 2rem; border-right: 1px solid var(--border);">
+        <div style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;">Clicky</div>
+        <div style="font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 0.3rem;">Click · Click · Click</div>
+        <div style="font-size: 0.8rem; color: var(--muted);">Audible feedback on each press. Satisfying but loud.</div>
+      </div>
+      <div class="col-md-4" style="padding: 1.5rem 2rem; border-right: 1px solid var(--border); background: var(--warm);">
+        <div style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;">Tactile</div>
+        <div style="font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 0.3rem;">Bump, no noise</div>
+        <div style="font-size: 0.8rem; color: var(--muted);">You feel the keypress but it stays quiet.</div>
+      </div>
+      <div class="col-md-4" style="padding: 1.5rem 2rem;">
+        <div style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;">Linear</div>
+        <div style="font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 0.3rem;">Smooth all the way</div>
+        <div style="font-size: 0.8rem; color: var(--muted);">No bump, no click. Silky and fast.</div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">Popular</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">Tactile · 45g</div>
+            <div class="card-name">Brown Classic (×10)</div>
+            <div class="card-desc">The most beginner-friendly switch. Gentle bump, quiet enough for any room.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱180<small>Per 10 pcs</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"></div>
+          <div class="card-body-custom">
+            <div class="card-cat">Linear · 45g</div>
+            <div class="card-name">Red Smooth (×10)</div>
+            <div class="card-desc">Ultra-smooth keypress. Great for gaming and fast typists who love quiet.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱160<small>Per 10 pcs</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">Loudest</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">Clicky · 50g</div>
+            <div class="card-name">Blue Click (×10)</div>
+            <div class="card-desc">The iconic click. Crisp, satisfying, and very audible. Great if you love the sound.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱170<small>Per 10 pcs</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEYCAPS -->
+<section id="keycaps" style="background: var(--warm);">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-5">
+      <div>
+        <p class="section-label">Category 03</p>
+        <h2 class="section-title">Keycaps</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Swap your keycaps to refresh your whole setup. It takes minutes and makes a huge difference.</p>
+      </div>
+      <a href="#" class="btn-card d-none d-md-inline-block" style="white-space:nowrap;">View All →</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">Fan Favorite</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">PBT · Full Set</div>
+            <div class="card-name">Chalk White Set</div>
+            <div class="card-desc">Clean, matte, minimal. Goes with literally everything. A timeless starter set.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱850<small>Full 104-key set</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"></div>
+          <div class="card-body-custom">
+            <div class="card-cat">PBT · Full Set</div>
+            <div class="card-name">Midnight Dark Set</div>
+            <div class="card-desc">Dark gray with white legends. Sleek and sharp for any dark setup.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱850<small>Full 104-key set</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="card-img-wrap"><div class="card-badge">New</div></div>
+          <div class="card-body-custom">
+            <div class="card-cat">PBT · Full Set</div>
+            <div class="card-name">Terracotta Warm Set</div>
+            <div class="card-desc">Earthy, warm, and unique. Perfect if you want a setup that stands out.</div>
+            <div class="card-footer-custom">
+              <div class="card-price">₱990<small>Full 104-key set</small></div>
+              <a href="#" class="btn-card">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-5 mb-md-0">
+        <p class="section-label">Why ClickWorks</p>
+        <h2 class="section-title" style="color: var(--paper);">Built for<br/>real beginners.</h2>
+        <div class="divider"></div>
+        <p style="color: #6a6860; font-size: 0.92rem; line-height: 1.8; max-width: 340px;">
+          We started ClickWorks because the keyboard hobby felt too intimidating for newcomers. 
+          We cut through the noise and bring you only what matters great feel, honest prices, 
+          and zero pressure to know the jargon.
+        </p>
+      </div>
+      <div class="col-md-7">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div class="why-title">No Jargon, Ever</div>
+          <div class="why-text">Every product description is written in plain language. You'll always know what you're getting.</div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div class="why-title">Handpicked Selection</div>
+          <div class="why-text">We only carry what we'd actually recommend to a friend. No filler products, no confusing options.</div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div class="why-title">Real Support</div>
+          <div class="why-text">Questions? We reply personally. No bots, no ticket queues just a real person who loves keyboards.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="footer-logo">Key<span>Forge</span></div>
+        <div class="footer-tagline">Handpicked keyboards for everyone.</div>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="footer-col-title">Shop</div>
+        <a href="#keyboards" class="footer-link">Keyboards</a>
+        <a href="#switches" class="footer-link">Switches</a>
+        <a href="#keycaps" class="footer-link">Keycaps</a>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="footer-col-title">Info</div>
+        <a href="#" class="footer-link">About</a>
+        <a href="#" class="footer-link">FAQ</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <div class="col-md-4">
+        <div class="footer-col-title">Get Updates</div>
+        <div style="display: flex; gap: 0;">
+          <input type="email" placeholder="your@email.com" style="background: #1a1a18; border: 1px solid #2a2a26; color: var(--paper); padding: 0.7rem 1rem; font-size: 0.82rem; font-family: 'DM Sans', sans-serif; flex: 1; outline: none;"/>
+          <button style="background: var(--accent); border: none; color: #fff; padding: 0 1.2rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; white-space: nowrap;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex justify-content-between">
+      <span>© 2025 ClickWorks. All rights reserved.</span>
+      <span>Made with care in the Philippines.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
 </body>
 </html>
